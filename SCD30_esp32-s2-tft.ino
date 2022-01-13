@@ -69,7 +69,7 @@ void loop()
     if (airSensor.getCO2() < 800){
       tft.fillScreen(ST77XX_GREEN);
     } else
-       if (airSensor.getCO2() < 100){
+       if (airSensor.getCO2() < 1000){
          tft.fillScreen(ST77XX_YELLOW);
        } else
           {
