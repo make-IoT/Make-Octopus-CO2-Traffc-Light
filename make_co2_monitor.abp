@@ -11,13 +11,13 @@
 <BeforeBlockId>407</BeforeBlockId>
 <AfterBlockId>276</AfterBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="280" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
-<BlockConnector con-block-id="307" connector-kind="socket" connector-type="cmd" init-type="cmd" label="dann" position-type="single"/>
-<BlockConnector con-block-id="310" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sonst" position-type="single"/>
+<BlockConnector con-block-id="280" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="307" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+<BlockConnector con-block-id="310" connector-kind="socket" connector-type="cmd" init-type="cmd" label="else" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="ifelse" id="276">
-<Label>Falls/sonst</Label>
+<Label>if/else</Label>
 <Location>
 <X>193</X>
 <Y>718</Y>
@@ -25,13 +25,13 @@
 <BeforeBlockId>260</BeforeBlockId>
 <AfterBlockId>249</AfterBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="272" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
-<BlockConnector con-block-id="320" connector-kind="socket" connector-type="cmd" init-type="cmd" label="dann" position-type="single"/>
-<BlockConnector con-block-id="339" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sonst" position-type="single"/>
+<BlockConnector con-block-id="272" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="320" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+<BlockConnector con-block-id="339" connector-kind="socket" connector-type="cmd" init-type="cmd" label="else" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="delay" id="249">
-<Label>Warte</Label>
+<Label>wait</Label>
 <Location>
 <X>193</X>
 <Y>1174</Y>
@@ -39,7 +39,7 @@
 <BeforeBlockId>276</BeforeBlockId>
 <AfterBlockId>234</AfterBlockId>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="250" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="250" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="pin-write-digitalLED" id="234">
@@ -52,18 +52,18 @@
 <AfterBlockId>247</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="235" connector-kind="socket" connector-type="number" init-type="number" label="pin" position-type="single"/>
-<BlockConnector con-block-id="236" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Wert" position-type="single"/>
+<BlockConnector con-block-id="236" connector-kind="socket" connector-type="boolean" init-type="boolean" label="value" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="delay" id="247">
-<Label>Warte</Label>
+<Label>wait</Label>
 <Location>
 <X>193</X>
 <Y>1258</Y>
 </Location>
 <BeforeBlockId>234</BeforeBlockId>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="248" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="248" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="number" id="248">
@@ -114,8 +114,8 @@
 <BeforeBlockId>276</BeforeBlockId>
 <AfterBlockId>277</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="340" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="341" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="340" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="341" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="serial_print" id="277">
@@ -126,7 +126,7 @@
 <BeforeBlockId>339</BeforeBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="278" connector-kind="socket" connector-type="string" init-type="string" label="Text" position-type="single"/>
-<BlockConnector con-block-id="279" connector-kind="socket" connector-type="boolean" init-type="boolean" label="neue Zeile" position-type="single"/>
+<BlockConnector con-block-id="279" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="true" id="279">
@@ -172,29 +172,29 @@
 </Plug>
 </Block>
 <Block genus-name="ifelse" id="320">
-<Label>Falls/sonst</Label>
+<Label>if/else</Label>
 <Location>
 <X>328</X>
 <Y>771</Y>
 </Location>
 <BeforeBlockId>276</BeforeBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="321" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
-<BlockConnector con-block-id="324" connector-kind="socket" connector-type="cmd" init-type="cmd" label="dann" position-type="single"/>
-<BlockConnector con-block-id="327" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sonst" position-type="single"/>
+<BlockConnector con-block-id="321" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="324" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+<BlockConnector con-block-id="327" connector-kind="socket" connector-type="cmd" init-type="cmd" label="else" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="ifelse" id="327">
-<Label>Falls/sonst</Label>
+<Label>if/else</Label>
 <Location>
 <X>462</X>
 <Y>872</Y>
 </Location>
 <BeforeBlockId>320</BeforeBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="328" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
-<BlockConnector con-block-id="331" connector-kind="socket" connector-type="cmd" init-type="cmd" label="dann" position-type="single"/>
-<BlockConnector con-block-id="334" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sonst" position-type="single"/>
+<BlockConnector con-block-id="328" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="331" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+<BlockConnector con-block-id="334" connector-kind="socket" connector-type="cmd" init-type="cmd" label="else" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="334">
@@ -205,8 +205,8 @@
 </Location>
 <BeforeBlockId>327</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="335" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="336" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="335" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="336" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorRed" id="336">
@@ -236,8 +236,8 @@
 </Location>
 <BeforeBlockId>327</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="332" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="333" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="332" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="333" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorYellow" id="333">
@@ -301,12 +301,12 @@
 </Location>
 <BeforeBlockId>320</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="325" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="326" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="325" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="326" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorGreen" id="326">
-<Label>Grün</Label>
+<Label>green</Label>
 <Location>
 <X>593</X>
 <Y>834</Y>
@@ -403,16 +403,16 @@
 </Plug>
 </Block>
 <Block genus-name="ifelse" id="310">
-<Label>Falls/sonst</Label>
+<Label>if/else</Label>
 <Location>
 <X>327</X>
 <Y>545</Y>
 </Location>
 <BeforeBlockId>260</BeforeBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="311" connector-kind="socket" connector-type="boolean" init-type="boolean" label="teste" position-type="single"/>
-<BlockConnector con-block-id="314" connector-kind="socket" connector-type="cmd" init-type="cmd" label="dann" position-type="single"/>
-<BlockConnector con-block-id="317" connector-kind="socket" connector-type="cmd" init-type="cmd" label="sonst" position-type="single"/>
+<BlockConnector con-block-id="311" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="314" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+<BlockConnector con-block-id="317" connector-kind="socket" connector-type="cmd" init-type="cmd" label="else" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="317">
@@ -423,8 +423,8 @@
 </Location>
 <BeforeBlockId>310</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="318" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="319" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="318" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="319" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorRed" id="319">
@@ -437,7 +437,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="318">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>591</X>
 <Y>649</Y>
@@ -454,8 +454,8 @@
 </Location>
 <BeforeBlockId>310</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="315" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="316" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="315" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="316" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorYellow" id="316">
@@ -468,7 +468,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="315">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>592</X>
 <Y>584</Y>
@@ -518,8 +518,8 @@
 </Location>
 <BeforeBlockId>260</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="308" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="309" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="308" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="309" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorGreen" id="309">
@@ -532,7 +532,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="308">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>458</X>
 <Y>483</Y>
@@ -584,7 +584,7 @@
 <AfterBlockId>407</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="214" connector-kind="socket" connector-type="string" init-type="string" label="Text" position-type="single"/>
-<BlockConnector con-block-id="218" connector-kind="socket" connector-type="boolean" init-type="boolean" label="neue Zeile" position-type="single"/>
+<BlockConnector con-block-id="218" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="false" id="218">
@@ -610,7 +610,7 @@
 </Sockets>
 </Block>
 <Block genus-name="glue_sn" id="215">
-<Label>verbinde</Label>
+<Label>connect</Label>
 <Location>
 <X>431</X>
 <Y>322</Y>
@@ -674,7 +674,7 @@
 <AfterBlockId>260</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="408" connector-kind="socket" connector-type="string" init-type="string" label="Text" position-type="single"/>
-<BlockConnector con-block-id="409" connector-kind="socket" connector-type="boolean" init-type="boolean" label="neue Zeile" position-type="single"/>
+<BlockConnector con-block-id="409" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="true" id="409">
@@ -719,7 +719,7 @@
 <AfterBlockId>266</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="254" connector-kind="socket" connector-type="string" init-type="string" label="Text" position-type="single"/>
-<BlockConnector con-block-id="253" connector-kind="socket" connector-type="boolean" init-type="boolean" label="neue Zeile" position-type="single"/>
+<BlockConnector con-block-id="253" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="false" id="253">
@@ -745,7 +745,7 @@
 </Sockets>
 </Block>
 <Block genus-name="glue_sn" id="255">
-<Label>verbinde</Label>
+<Label>connect</Label>
 <Location>
 <X>423</X>
 <Y>197</Y>
@@ -766,7 +766,7 @@
 <AfterBlockId>263</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="232" connector-kind="socket" connector-type="number" init-type="number" label="pin" position-type="single"/>
-<BlockConnector con-block-id="233" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Wert" position-type="single"/>
+<BlockConnector con-block-id="233" connector-kind="socket" connector-type="boolean" init-type="boolean" label="value" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="digital-low" id="233">
@@ -795,7 +795,7 @@
 </Location>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="262" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Setup" position-type="single"/>
-<BlockConnector con-block-id="231" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Schleife" position-type="single"/>
+<BlockConnector con-block-id="231" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Loop" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="setter_variable_number" id="263">
@@ -807,11 +807,11 @@
 <AfterBlockId>251</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="264" connector-kind="socket" connector-type="number" init-type="number" label="Variable" position-type="single"/>
-<BlockConnector con-block-id="258" connector-kind="socket" connector-type="number" init-type="number" label="Wert" position-type="single"/>
+<BlockConnector con-block-id="258" connector-kind="socket" connector-type="number" init-type="number" label="value" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="setter_variable_number" id="266">
-<Label>Setze Zahl-Variable</Label>
+<Label>set digital variable</Label>
 <Location>
 <X>193</X>
 <Y>248</Y>
@@ -820,7 +820,7 @@
 <AfterBlockId>213</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="267" connector-kind="socket" connector-type="number" init-type="number" label="Variable" position-type="single"/>
-<BlockConnector con-block-id="269" connector-kind="socket" connector-type="number" init-type="number" label="Wert" position-type="single"/>
+<BlockConnector con-block-id="269" connector-kind="socket" connector-type="number" init-type="number" label="value" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="GetBSEC" id="269">
@@ -901,7 +901,7 @@
 <Y>42</Y>
 </Location>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="185" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Befehle" position-type="single"/>
+<BlockConnector con-block-id="185" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Command" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="185">
@@ -912,8 +912,8 @@
 <BeforeBlockId>261</BeforeBlockId>
 <AfterBlockId>188</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="186" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="187" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="186" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="187" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="188">
@@ -925,8 +925,8 @@
 <BeforeBlockId>185</BeforeBlockId>
 <AfterBlockId>209</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="189" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="190" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="189" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="190" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="delay" id="209">
@@ -937,7 +937,7 @@
 <BeforeBlockId>188</BeforeBlockId>
 <AfterBlockId>203</AfterBlockId>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="210" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="210" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="203">
@@ -949,8 +949,8 @@
 <BeforeBlockId>209</BeforeBlockId>
 <AfterBlockId>206</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="204" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="205" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="204" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="205" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="206">
@@ -962,12 +962,12 @@
 <BeforeBlockId>203</BeforeBlockId>
 <AfterBlockId>223</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="207" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="208" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="207" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="208" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="delay" id="223">
-<Label>Warte</Label>
+<Label>wait</Label>
 <Location>
 <X>1242</X>
 <Y>296</Y>
@@ -975,7 +975,7 @@
 <BeforeBlockId>206</BeforeBlockId>
 <AfterBlockId>197</AfterBlockId>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="224" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="224" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="197">
@@ -987,8 +987,8 @@
 <BeforeBlockId>223</BeforeBlockId>
 <AfterBlockId>200</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="198" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="199" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="198" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="199" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="200">
@@ -1000,8 +1000,8 @@
 <BeforeBlockId>197</BeforeBlockId>
 <AfterBlockId>211</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="201" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="202" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="201" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="202" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="delay" id="211">
@@ -1012,7 +1012,7 @@
 <BeforeBlockId>200</BeforeBlockId>
 <AfterBlockId>225</AfterBlockId>
 <Sockets num-sockets="1">
-<BlockConnector con-block-id="212" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="212" connector-kind="socket" connector-type="number" init-type="number" label="ms" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="225">
@@ -1024,8 +1024,8 @@
 <BeforeBlockId>211</BeforeBlockId>
 <AfterBlockId>228</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="226" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="227" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="226" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="227" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="iot_neopixel_light" id="228">
@@ -1036,8 +1036,8 @@
 </Location>
 <BeforeBlockId>225</BeforeBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="229" connector-kind="socket" connector-type="number" init-type="number" label="Ort" position-type="single"/>
-<BlockConnector con-block-id="230" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Farbe" position-type="single"/>
+<BlockConnector con-block-id="229" connector-kind="socket" connector-type="number" init-type="number" label="position" position-type="single"/>
+<BlockConnector con-block-id="230" connector-kind="socket" connector-type="boolean" init-type="boolean" label="color" position-type="single"/>
 </Sockets>
 </Block>
 <Block genus-name="NEOVectorOff" id="230">
@@ -1069,7 +1069,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="226">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>1372</X>
 <Y>467</Y>
@@ -1117,7 +1117,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="198">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>1372</X>
 <Y>329</Y>
@@ -1165,7 +1165,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="204">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>1372</X>
 <Y>191</Y>
@@ -1214,7 +1214,7 @@
 </Plug>
 </Block>
 <Block genus-name="neo-rechts" id="186">
-<Label>Rechts</Label>
+<Label>right</Label>
 <Location>
 <X>1372</X>
 <Y>53</Y>
